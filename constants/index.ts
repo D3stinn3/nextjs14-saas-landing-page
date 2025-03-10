@@ -1,11 +1,11 @@
 export const images = {
-  yourlogo: "/assets/yourlogo.svg",
-  brainwave: "/assets/brainwave.svg",
+  yourlogo: "/assets/brainwave.png",
+  brainwave: "/assets/brainwave.png",
   check: "/assets/check.svg",
   check2: "/assets/check-02.svg",
   loading1: "/assets/loading-01.svg",
-  brainwaveSymbol: "/assets/brainwave-symbol.svg",
-  brainwaveWhiteSymbol: "/assets/brainwave-symbol-white.svg",
+  brainwaveSymbol: "/assets/brainwave.png",
+  brainwaveWhiteSymbol: "/assets/brainwave.png",
   play: "/assets/play.svg",
   gradient: "/assets/gradient.png",
   smallSphere: "/assets/4-small.png",
@@ -67,6 +67,19 @@ export const images = {
   instagram: "/assets/socials/instagram.svg",
   telegram: "/assets/socials/telegram.svg",
   twitter: "/assets/socials/twitter.svg",
+  // NFT Images
+  chris: "/assets/NFTs/chris.jpg",
+  dogeGoblin: "/assets/NFTs/doge-goblin.jpg",
+  theBob: "/assets/NFTs/the-bob.jpg",
+  theDead: "/assets/NFTs/the-dead.jpg",
+  theDon: "/assets/NFTs/the-don.jpg",
+  theErik: "/assets/NFTs/the-erik.jpg",
+  theFace: "/assets/NFTs/the-face.jpg",
+  theGringo: "/assets/NFTs/the-gringo.jpg",
+  theJoker: "/assets/NFTs/the-joker.jpg",
+  thePooh: "/assets/NFTs/the-pooh.jpg",
+  theVenom: "/assets/NFTs/the-venom.jpg",
+  theWhistle: "/assets/NFTs/the-whisle.jpg",
 };
 
 const {
@@ -105,23 +118,122 @@ const {
   instagram,
   telegram,
   twitter,
+  chris,
+  dogeGoblin,
+  theBob,
+  theDead,
+  theDon,
+  theErik,
+  theFace,
+  theGringo,
+  theJoker,
+  thePooh,
+  theVenom,
+  theWhistle,
 } = images;
+
+export const nfts = [
+  {
+    id: "1",
+    name: "Chris",
+    image: chris,
+    price: "0.2 DOGE",
+    owner: "Unknown",
+  },
+  {
+    id: "2",
+    name: "Doge Goblin",
+    image: dogeGoblin,
+    price: "1.5 DOGE",
+    owner: "Meme Lord",
+  },
+  {
+    id: "3",
+    name: "The Bob",
+    image: theBob,
+    price: "0.8 DOGE",
+    owner: "CollectorX",
+  },
+  {
+    id: "4",
+    name: "The Dead",
+    image: theDead,
+    price: "0.6 DOGE",
+    owner: "Ghost Collector",
+  },
+  {
+    id: "5",
+    name: "The Don",
+    image: theDon,
+    price: "2.0 DOGE",
+    owner: "Crypto Mafia",
+  },
+  {
+    id: "6",
+    name: "The Erik",
+    image: theErik,
+    price: "1.1 DOGE",
+    owner: "Elite Holder",
+  },
+  {
+    id: "7",
+    name: "The Face",
+    image: theFace,
+    price: "0.5 DOGE",
+    owner: "Anonymous",
+  },
+  {
+    id: "8",
+    name: "The Gringo",
+    image: theGringo,
+    price: "0.9 DOGE",
+    owner: "Cowboy Collector",
+  },
+  {
+    id: "9",
+    name: "The Joker",
+    image: theJoker,
+    price: "1.3 DOGE",
+    owner: "Chaos Enthusiast",
+  },
+  {
+    id: "10",
+    name: "The Pooh",
+    image: thePooh,
+    price: "0.7 DOGE",
+    owner: "Honey Hoarder",
+  },
+  {
+    id: "11",
+    name: "The Venom",
+    image: theVenom,
+    price: "2.5 DOGE",
+    owner: "Dark Syndicate",
+  },
+  {
+    id: "12",
+    name: "The Whistle",
+    image: theWhistle,
+    price: "0.4 DOGE",
+    owner: "Mystery Dealer",
+  },
+];
 
 export const navigation = [
   {
     id: "0",
-    title: "Features",
+    title: "Lore",
     url: "#features",
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Buy NFTS",
+    url: "#how-to-use",
   },
   {
     id: "2",
-    title: "How to use",
-    url: "#how-to-use",
+    title: "Buy Merch",
+    url: "#pricing",
   },
   {
     id: "3",
@@ -130,8 +242,8 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "New account",
-    url: "#signup",
+    title: "connect Wallet",
+    url: "#connectWallet",
     onlyMobile: true,
   },
   {
@@ -155,55 +267,63 @@ export const brainwaveServicesIcons = [recording03, recording01, disc02, chromec
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Voice-Activated NFT Search",
+    text: "Implement voice recognition to allow users to search, filter, and explore NFTs using natural voice commands, making the marketplace more accessible and hands-free.",
+    date: "Q2 2024",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
   },
   {
     id: "1",
-    title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    title: "Gamified NFT Rewards",
+    text: "Introduce gamification elements such as collector badges, achievement-based NFT rewards, and leaderboard rankings to incentivize community engagement and trading activity.",
+    date: "Q3 2024",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "Customizable NFT Profiles",
+    text: "Enable users to personalize their NFT collector profiles with avatars, themes, and customizable showcases, enhancing identity and interaction within the marketplace.",
+    date: "Q3 2024",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    title: "Blockchain & API Integrations",
+    text: "Expand interoperability by integrating external blockchain APIs, enabling cross-chain NFT transactions, real-time floor price tracking, and live rarity analytics.",
+    date: "Q4 2024",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Seamlessly trade, showcase, and collect NFTs with a frictionless experience designed for both newcomers and seasoned collectors.";
+
+export const collabText1 =
+  "Automate your NFT listings, transfers, and royalties with cutting-edge blockchain technology, making transactions effortless and secure.";
+
+export const collabText2 =
+  "Your NFTs are protected with top-tier encryption and decentralized security, ensuring true ownership and peace of mind.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Seamless NFT Experience",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Smart NFT Automation",
+    text: collabText1,
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Unmatched Security",
+    text: collabText2,
   },
 ];
 
@@ -269,35 +389,41 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
+    title: "Explorer",
+    description: "Start your NFT journey with essential tools",
     price: "0",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "Access to the NFT marketplace",
+      "Browse and explore all available NFTs",
+      "Basic trading tools for buying and selling",
+      "Limited free NFT drops (occasional events)",
     ],
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Collector",
+    description: "Enhanced NFT trading experience with exclusive perks",
+    price: "19.99",
     features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
+      "All Explorer features",
+      "Lower marketplace transaction fees",
+      "Exclusive early access to limited NFT drops",
+      "Advanced trading insights and portfolio tracking",
+      "Priority support for marketplace issues",
     ],
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Whale",
+    description: "Ultimate NFT access with VIP benefits",
+    price: "99.99",
     features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
+      "All Collector features",
+      "Zero transaction fees on purchases",
+      "VIP access to high-value NFT auctions",
+      "Exclusive access to private NFT sales & whitelist spots",
+      "Dedicated account manager & personal NFT advisory",
+      "Guaranteed spots in NFT launchpad projects",
     ],
   },
 ];
@@ -305,16 +431,16 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "The Lore of the Goblins of Doge Town.",
+    text: "Long ago, before the rivers ran straight and the moons hung low, there was a scrappy little patch of earth where the wind smelled of wet fur and ambition. This was Doge Town—not a town of dogs, mind you, but...",
     backgroundUrl: "assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "1",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "The Founding of Doge Town",
+    text: "The goblins set to work with reckless glee, building their town from whatever they could scavenge: bent spoons, wagon wheels, the bones of unlucky travelers, and a frankly alarming number of chewed-up boots. At the center of it all stood...",
     backgroundUrl: "assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -322,36 +448,20 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    title: "The Goblin Clans",
+    text: "Over time, the goblins split into rival clans, each claiming to serve the Great Doge in their own ridiculous way:The Woofblades: Sneaky cutthroats...",
     backgroundUrl: "assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "The Goblins Today",
+    text: "For now, the goblins of Doge Town carry on, oblivious or defiant. They bicker over who gets the shiniest Doge Coin,...",
     backgroundUrl: "assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
     light: true,
-  },
-  {
-    id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
-    backgroundUrl: "assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
-  },
-  {
-    id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
-    backgroundUrl: "assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
   },
 ];
 

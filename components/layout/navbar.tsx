@@ -91,10 +91,10 @@ const Navbar = (props: Props) => {
         </nav>
 
         <Link
-          href="#signup"
+          href="#connectWallet"
           className="button mr-8 hidden text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
-          New account
+          Connect Wallet
         </Link>
         <Button className="hidden lg:flex" href="#login">
           Sign in

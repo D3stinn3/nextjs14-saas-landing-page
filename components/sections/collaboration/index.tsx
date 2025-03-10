@@ -13,18 +13,23 @@ const Collaboration = (props: Props) => {
     <Section id="collaboration" crosses>
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
-          <h2 className="h2 mb-12 max-md:mb-4">AI Chat App for seamless collaboration</h2>
+          <h2 className="h2 mb-12 max-md:mb-4">The NFT Hub for Seamless Collecting & Trading</h2>
           <ul className="mb-10 max-w-[22rem] md:mb-14">
             {collabContent.map((item) => (
-              <li key={item.id} className="mb-3 py-3">
-                <div className="flex items-center">
+              <li key={item.id} className="group mb-3 py-3">
+                <div className="flex cursor-pointer items-center">
                   <Image src={images.check} width={24} height={24} alt="check" />
                   <h6 className="body-2 ml-5">{item.title}</h6>
                 </div>
-                {item.text && <p className="body-2 mt-3 text-n-4">{item.text}</p>}
+                {item.text && (
+                  <p className="body-2 mt-3 max-h-0 overflow-hidden text-n-4 opacity-0 transition-all duration-300 ease-in-out group-hover:max-h-[100px] group-hover:opacity-100">
+                    {item.text}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
+
           <Button>Try it now</Button>
         </div>
 
