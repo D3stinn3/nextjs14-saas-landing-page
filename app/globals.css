@@ -6,8 +6,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Typefesse Claire Obscure";
+  src:
+    url("/fonts/2-webfonts/Typefesse_Claire-Obscure.woff2") format("woff2"),
+    url("/fonts/2-webfonts/Typefesse_Claire-Obscure.woff") format("woff"),
+    url("/fonts/2-webfonts/Typefesse_Claire-Obscure.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Typefesse Pleine";
+  src:
+    url("/fonts/2-webfonts/Typefesse_Pleine.woff2") format("woff2"),
+    url("/fonts/2-webfonts/Typefesse_Pleine.woff") format("woff"),
+    url("/fonts/2-webfonts/Typefesse_Pleine.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  --font-sora: "Sora", sans-serif;
+  --font-sora: "Typefesse Claire Obscure";
   --font-code: "Source Code Pro", monospace;
   --font-grotesk: "Space Grotesk", sans-serif;
 }
