@@ -13,10 +13,10 @@ const NFTCard = ({ name, image, price, owner }: NFTCardProps) => {
       <Image src={image} alt={name} width={300} height={300} className="rounded-lg" />
       <h3 className="mt-4 text-lg font-bold text-white">{name}</h3>
       <p className="text-gray-400">Owned by: {owner}</p>
-      <p className="font-semibold text-blue-400">{price}</p>
-      <button className="mt-3 w-full rounded-lg bg-blue-600 py-2 text-white transition-all hover:bg-blue-700">
+      {/* <p className="font-semibold text-blue-400">{price}</p> */}
+      {/* <button className="mt-3 w-full rounded-lg bg-blue-600 py-2 text-white transition-all hover:bg-blue-700">
         Buy Now
-      </button>
+      </button> */}
     </div>
   );
 };
