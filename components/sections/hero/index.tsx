@@ -40,10 +40,7 @@ const Hero = (props: Props) => {
             </span>
             —where shinies gleam, chaos thrives, and much precious awaits!
           </h1>
-          <p
-            className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}
-            style={{ fontFamily: "Typefesse Pleine" }}
-          >
+          <p className={cn("body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8")}>
             Doge Town, where chaos and fortune collide, treasures shine bright, and legendary NFTs
             await their next great tale
           </p>
